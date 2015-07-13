@@ -8,8 +8,12 @@ Installation
 
 Include script after the jQuery library (unless you are packaging scripts somehow else):
 
+Requires jQuery 1.8 or later.
+
 ```html
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
 <script src="/path/to/jquery.emoji.js"></script>
+
 ```
 
 Usage
@@ -20,15 +24,28 @@ Very simple.
 ```html
 <script type="text/javascript">
 $(document).ready(function(){
-  $('.comment').each(function(i, d){
-    $(d).emoji();
-  });
+    $(".comment").each(function(i, d) {
+        $(d).emoji();
+    });
 });
 </script>
-...
+
+```
+
+```html
 <div class="comment">
-  <p>:+1:</p>
+    <p>:+1:</p>
 </div>
+
+```
+
+You can also change the url of emojis:
+
+```js
+$(".comment").emoji(emoji_url_temp);
+// Or...
+$.emoji.url = emoji_url;
+
 ```
 
 Contributing

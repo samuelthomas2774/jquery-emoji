@@ -1,32 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset='utf-8'>
-    <title>Emoji Test</title>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script src="../jquery.emoji.js" type="text/javascript"></script>
-    <script>
-      $(document).ready(function(){
-        $('.comment').each(function(i, d){
-          $(d).emoji();
-        });
-      });
-    </script>
+	<meta charset="utf-8" />
+	<title>Emoji Test</title>
+	<style>
+		* { font-family: arial, helvetica; font-weight: normal; margin: 0px; }
+		div:not(:first-child) { margin-top: 10px; }
+		p:not(:first-child) { margin-top: 5px; }
+		body { padding: 20px; }
+	</style>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
+	<script src="../jquery.emoji.js" type="text/javascript"></script>
+	<script>
+		$(document).ready(function() {
+			// Custom emoji url, optional
+			$.emoji.url = "../emojis";
+			
+			$(".comment").emoji();
+		});
+	</script>
 </head>
 <body>
-    <h1>Emoji Test</h1>
-    <p>This is jQuery Emoji Plugin's Test.</p>
-    <div id="comments">
-        <div class="comment">
-            <p>awesome! :+1::+1::+1::+1::+1::+1::+1::+1::+1:</p>
-        </div>
-        <div class="comment">
-            <p>:smile: nice~</p>
-            <p>:smile: nice~</p>
-        </div>
-        <div class="comment">
-            <p>welcome! :ok_woman:</p>
-        </div>
-    </div>
+	<h1>Emoji Test</h1>
+	<p>This is jQuery Emoji Plugin's Test.</p>
+	<div id="comments">
+		<div class="comment">
+			<p data-test=":smile: won't be replaced, because it's in an attribute">awesome! :+1::+1::+1::+1::+1::+1::+1::+1::+1:</p>
+			<script>
+				// :smile: won't be replaced, because it's in a script tag
+			</script>
+		</div>
+		<div class="comment">
+			<p>:smile: nice~</p>
+			<p>:smile: nice~</p>
+		</div>
+		<div class="comment">
+			<p>welcome! :ok_woman:</p>
+		</div>
+	</div>
 </body>
 </html>
