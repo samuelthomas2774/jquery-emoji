@@ -1,7 +1,7 @@
 jQuery Emoji Plugin
 ===================
 
-A simple, lightweight jQuery plugin for [emoji](http://www.emoji-cheat-sheet.com/) parser. :tongue:
+A simple, lightweight jQuery plugin for [emoji](http://www.emoji-cheat-sheet.com/) parser. :mfinger:
 
 Installation
 ------------
