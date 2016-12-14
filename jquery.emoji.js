@@ -46,7 +46,7 @@
 	
 	// $.emoji.replace(), callback for .replace().
 	$.emoji.replace = function() {
-		if(typeof $.emoji.url != "string") $.emoji.url = "https://samuelthomas.ml/static/emoji/images/emojis/";
+		if(typeof $.emoji.url != "string") $.emoji.url = "emojis/";
 		if($.emoji.url.substr(-1) != "/") $.emoji.url += "/";
  		var emoji = arguments[1];
 		if(emoji == "+1") emoji = "plus1";
