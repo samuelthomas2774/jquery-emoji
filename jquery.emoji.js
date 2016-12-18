@@ -33,7 +33,7 @@
 	};
 	
 	// $.emoji.url, the url of emojis.
-	$.emoji.url = "https://samuelthomas2774.github.com/jquery-emoij/emoji/";
+	$.emoji.url = "https://samuelthomas2774.github.io/jquery-emoij/emoji/";
 	
 	// $.emoji.textnodes(), returns any text nodes unless in a script or style element.
 	$.emoji.textnodes = function(element) {
@@ -45,7 +45,7 @@
 	
 	// $.emoji.replace(), callback for .replace().
 	$.emoji.replace = function() {
-		if(typeof $.emoji.url != "string") $.emoji.url = "https://samuelthomas2774.github.com/jquery-emoij/emojis/";
+		if(typeof $.emoji.url != "string") $.emoji.url = "https://samuelthomas2774.github.io/jquery-emoij/emojis/";
 		if($.emoji.url.substr(-1) != "/") $.emoji.url += "/";
  		var emoji = arguments[1];
 		if(emoji == "+1") emoji = "plus1";
