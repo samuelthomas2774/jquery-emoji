@@ -2,8 +2,9 @@ jQuery Emoji Plugin
 ===================
 
 A simple, lightweight jQuery plugin for [emoji](http://www.emoji-cheat-sheet.com/) parser. :tounge:
-#-UPDATE-
-updated by HarryUK
+
+[HarryUK](https://github.com/harryuk): updated by HarryUK
+	+ :gaypride: :golfguy: :golfgirl: :mfinger: :horserider:
 
 Installation
 ------------
